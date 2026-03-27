@@ -58,6 +58,27 @@ pip install -r requirements.txt
 source /opt/ros/jazzy/setup.bash
 ```
 
+## 3) Install/build VectorNav ROS 2 driver (one-time)
+
+Clone and build the ROS 2 branch of the VectorNav driver:
+
+```bash
+cd /home/cesar/cv_slam_experiment/vendor
+git clone https://github.com/dawonn/vectornav.git -b ros2
+cd vectornav
+source /opt/ros/jazzy/setup.bash
+colcon build --symlink-install
+```
+
+If you need a clean rebuild:
+
+```bash
+cd /home/cesar/cv_slam_experiment/vendor/vectornav
+rm -rf build install log
+source /opt/ros/jazzy/setup.bash
+colcon build --symlink-install
+```
+
 In most runs you want both:
 
 ```bash
