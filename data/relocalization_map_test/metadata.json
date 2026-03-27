@@ -1,0 +1,9 @@
+{
+  "created": "/home/cesar/cv_slam_experiment",
+  "num_keyframes": 15,
+  "num_points_3d": 10510,
+  "coverage_area": null,
+  "scale_estimate": null,
+  "num_images": 15,
+  "descriptor_type": "dinov2"
+}
